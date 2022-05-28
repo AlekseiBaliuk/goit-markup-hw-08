@@ -26,6 +26,13 @@
             >Web<span class="logo__text logo__text--black" lang="en">Studio</span>
           </a>
 
+          <button type="button" class="header__button" aria-expanded="false" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="header__icon-menu" href="./images/icons.svg#icon-mobile-menu"></use>
+              <use class="header__icon-close" href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+
           <ul class="site-nav">
             <li class="site-nav__item">
               <a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a>
@@ -160,7 +167,13 @@
 
           <ul class="team">
             <li class="team__item">
-              <img src="./images/command/img1.jpg" alt="Член команды" width="270" height="260" />
+              <img
+                class="team__img"
+                src="./images/command/img1.jpg"
+                alt="Член команды"
+                width="270px"
+                height="260px"
+              />
               <div class="team__member">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
@@ -196,7 +209,12 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/command/img2.jpg" alt="Член команды" width="270" height="260" />
+              <img
+                src="./images/command/img2.jpg"
+                alt="Член команды"
+                width="270px"
+                height="260px"
+              />
               <div class="team__member">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
@@ -232,7 +250,12 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/command/img3.jpg" alt="Член команды" width="270" height="260" />
+              <img
+                src="./images/command/img3.jpg"
+                alt="Член команды"
+                width="270px"
+                height="260px"
+              />
               <div class="team__member">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
@@ -268,7 +291,12 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/command/img4.jpg" alt="Член команды" width="270" height="260" />
+              <img
+                src="./images/command/img4.jpg"
+                alt="Член команды"
+                width="270px"
+                height="260px"
+              />
               <div class="team__member">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>
@@ -372,7 +400,7 @@
             >Web<span class="logo__text logo__text--white" lang="en">Studio</span>
           </a>
 
-          <address class="footer-contacts">
+          <address class="footer-contacts__address">
             <ul class="footer-contacts__list">
               <li class="footer-contacts__item">
                 <a
@@ -508,5 +536,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

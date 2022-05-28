@@ -7,5 +7,34 @@
 
 .footer__flex {
   display: flex;
-  align-items: baseline;
+  text-align: center;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
+
+// =========================================
+
+// .footer {
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+
+//   background-color: var(--bg-color);
+// }
+
+// .footer__flex {
+//   display: flex;
+//   align-items: baseline;
+// }

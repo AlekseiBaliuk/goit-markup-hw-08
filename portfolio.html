@@ -26,6 +26,13 @@
             >Web<span class="logo__text logo__text--black" lang="en">Studio</span>
           </a>
 
+          <button type="button" class="header__button" aria-expanded="false" data-menu-button>
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="header__icon-menu" href="./images/icons.svg#icon-mobile-menu"></use>
+              <use class="header__icon-close" href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+
           <ul class="site-nav">
             <li class="site-nav__item">
               <a class="site-nav__link" href="./index.html">Студия</a>
@@ -94,6 +101,7 @@
               <a class="product" href="">
                 <div class="product__thumb">
                   <img
+                    class="product__img"
                     src="./images/portfolio/img-1.jpg"
                     alt="Открытый ноутбук с сайтом Технокряк"
                     width="370"
@@ -328,7 +336,7 @@
             >Web<span class="logo__text logo__text--white" lang="en">Studio</span>
           </a>
 
-          <address class="footer-contacts">
+          <address class="footer-contacts__address">
             <ul class="footer-contacts__list">
               <li class="footer-contacts__item">
                 <a

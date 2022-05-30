@@ -17,6 +17,11 @@
 }
 
 .header__logo {
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
   @media screen and (min-width: 768px) {
     margin-right: 88px;
   }
@@ -39,36 +44,3 @@
 .footer__logo {
   display: block;
 }
-
-// =================================================
-
-// .logo {
-//   font-family: Raleway;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.19;
-
-//   color: var(--accent-color);
-// }
-
-// .logo__text--black {
-//   color: var(--logo-black-color);
-// }
-
-// .footer__logo {
-//   display: block;
-//   margin-bottom: 20px;
-// }
-
-// .logo__text--white {
-//   color: var(--main-white-color);
-// }
-
-// .footer__logo {
-//   display: block;
-//   margin-bottom: 20px;
-// }
-
-// .logo__text--white {
-//   color: var(--main-white-color);
-// }

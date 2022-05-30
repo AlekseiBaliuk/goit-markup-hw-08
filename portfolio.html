@@ -33,39 +33,56 @@
             </svg>
           </button>
 
-          <ul class="site-nav">
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студия</a>
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link site-nav__link--current" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a class="site-nav__link" href="">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+          <div class="menu-container" data-menu>
+            <ul class="site-nav">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="./index.html">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link site-nav__link--current" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="">Контакты</a>
+              </li>
+            </ul>
 
-        <ul class="header-contacts">
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="mailto:info@devstudio.com"
-              ><svg class="header-contacts__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contacts__item">
-            <a class="header-contacts__link" href="tel:380961111111">
-              <svg class="header-contacts__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            <ul class="header-contacts">
+              <li class="header-contacts__item">
+                <a class="header-contacts__link" href="mailto:info@devstudio.com"
+                  ><svg class="header-contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="header-contacts__item">
+                <a class="header-contacts__link" href="tel:380961111111">
+                  <svg class="header-contacts__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+
+            <ul class="header-links">
+              <li class="header-links__item">
+                <a href="" class="header-links__link">Instagram</a>
+              </li>
+              <li class="header-links__item">
+                <a href="" class="header-links__link">Twitter</a>
+              </li>
+              <li class="header-links__item">
+                <a href="" class="header-links__link">Facebook</a>
+              </li>
+              <li class="header-links__item">
+                <a href="" class="header-links__link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -100,13 +117,41 @@
             <li class="card-set__item">
               <a class="product" href="">
                 <div class="product__thumb">
-                  <img
-                    class="product__img"
-                    src="./images/portfolio/img-1.jpg"
-                    alt="Открытый ноутбук с сайтом Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img-1/img1-370@1x.jpg 1x,
+                        ./images/portfolio/img-1/img1-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-1/img1-354@1x.jpg 1x,
+                        ./images/portfolio/img-1/img1-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-1/img1-450@1x.jpg 1x,
+                        ./images/portfolio/img-1/img1-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="product__img"
+                      src="./images/portfolio/img-1/img1-450@1x.jpg"
+                      alt="Открытый ноутбук с сайтом Технокряк"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__overlay-box">
                       <p class="product__overlay-text">
@@ -128,12 +173,41 @@
             <li class="card-set__item">
               <a class="product" href="">
                 <div class="product__thumb">
-                  <img
-                    src="./images/portfolio/img-2.jpg"
-                    alt="Два парня играют в баскетболл"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img-2/img2-370@1x.jpg 1x,
+                        ./images/portfolio/img-2/img2-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-2/img2-354@1x.jpg 1x,
+                        ./images/portfolio/img-2/img2-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-2/img2-450@1x.jpg 1x,
+                        ./images/portfolio/img-2/img2-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="product__img"
+                      src="./images/portfolio/img-2/img2-450@1x.jpg"
+                      alt="Два парня играют в баскетболл"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__overlay-box">
                       <p class="product__overlay-text">
@@ -154,12 +228,40 @@
             <li class="card-set__item">
               <a class="product" href="">
                 <div class="product__thumb">
-                  <img
-                    src="./images/portfolio/img-3.jpg"
-                    alt="Логотип в виде рыбы с название ресторана Seafood"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img-3/img3-370@1x.jpg 1x,
+                        ./images/portfolio/img-3/img3-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-3/img3-354@1x.jpg 1x,
+                        ./images/portfolio/img-3/img3-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-3/img3-450@1x.jpg 1x,
+                        ./images/portfolio/img-3/img3-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="product__img"
+                      src="./images/portfolio/img-3/img3-450@1x.jpg"
+                      alt="Логотип в виде рыбы с название ресторана Seafood"
+                    />
+                  </picture>
 
                   <div class="product__overlay">
                     <div class="product__overlay-box">
@@ -174,14 +276,48 @@
                 <div class="product__meta">
                   <h2 class="product__title">Ресторан Seafood</h2>
                   <p class="product__text">Приложение</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
 
             <li class="card-set__item">
               <a class="product" href="">
                 <div class="product__thumb">
-                  <img src="./images/portfolio/img-4.jpg" alt="Наушники" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img-4/img4-370@1x.jpg 1x,
+                        ./images/portfolio/img-4/img4-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-4/img4-354@1x.jpg 1x,
+                        ./images/portfolio/img-4/img4-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-4/img4-450@1x.jpg 1x,
+                        ./images/portfolio/img-4/img4-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="product__img"
+                      src="./images/portfolio/img-4/img4-450@1x.jpg"
+                      alt="Наушники"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__overlay-box">
                       <p class="product__overlay-text">
@@ -195,19 +331,48 @@
                 <div class="product__meta">
                   <h2 class="product__title">Проект Prime</h2>
                   <p class="product__text">Маркетинг</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
 
             <li class="card-set__item">
               <a class="product" href="">
                 <div class="product__thumb">
-                  <img
-                    src="./images/portfolio/img-5.jpg"
-                    alt="Две коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img-5/img5-370@1x.jpg 1x,
+                        ./images/portfolio/img-5/img5-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-5/img5-354@1x.jpg 1x,
+                        ./images/portfolio/img-5/img5-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-5/img5-450@1x.jpg 1x,
+                        ./images/portfolio/img-5/img5-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="product__img"
+                      src="./images/portfolio/img-5/img5-450@1x.jpg"
+                      alt="Две коробки"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__overlay-box">
                       <p class="product__overlay-text">
@@ -221,19 +386,48 @@
                 <div class="product__meta">
                   <h2 class="product__title">Проект Boxes</h2>
                   <p class="product__text">Приложение</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
 
             <li class="card-set__item">
               <a class="product" href="">
                 <div class="product__thumb">
-                  <img
-                    src="./images/portfolio/img-6.jpg"
-                    alt="Компьютерый монитор"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img-6/img6-370@1x.jpg 1x,
+                        ./images/portfolio/img-6/img6-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-6/img6-354@1x.jpg 1x,
+                        ./images/portfolio/img-6/img6-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-6/img6-450@1x.jpg 1x,
+                        ./images/portfolio/img-6/img6-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="product__img"
+                      src="./images/portfolio/img-6/img6-450@1x.jpg"
+                      alt="Компьютерый монитор"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__overlay-box">
                       <p class="product__overlay-text">
@@ -247,19 +441,48 @@
                 <div class="product__meta">
                   <h2 class="product__title">Inspiration has no Borders</h2>
                   <p class="product__text">Веб-сайт</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
 
             <li class="card-set__item">
               <a class="product" href="">
                 <div class="product__thumb">
-                  <img
-                    src="./images/portfolio/img-7.jpg"
-                    alt="Открытый журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img-7/img7-370@1x.jpg 1x,
+                        ./images/portfolio/img-7/img7-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-7/img7-354@1x.jpg 1x,
+                        ./images/portfolio/img-7/img7-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-7/img7-450@1x.jpg 1x,
+                        ./images/portfolio/img-7/img7-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="product__img"
+                      src="./images/portfolio/img-7/img7-450@1x.jpg"
+                      alt="Открытый журнал"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__overlay-box">
                       <p class="product__overlay-text">
@@ -273,14 +496,48 @@
                 <div class="product__meta">
                   <h2 class="product__title">Издание Limited Edition</h2>
                   <p class="product__text">Дизайн</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
 
             <li class="card-set__item">
               <a class="product" href="">
                 <div class="product__thumb">
-                  <img src="./images/portfolio/img-8.jpg" alt="Этикетка" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img-8/img8-370@1x.jpg 1x,
+                        ./images/portfolio/img-8/img8-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-8/img8-354@1x.jpg 1x,
+                        ./images/portfolio/img-8/img8-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-8/img8-450@1x.jpg 1x,
+                        ./images/portfolio/img-8/img8-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="product__img"
+                      src="./images/portfolio/img-8/img8-450@1x.jpg"
+                      alt="Этикетка"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__overlay-box">
                       <p class="product__overlay-text">
@@ -294,19 +551,48 @@
                 <div class="product__meta">
                   <h2 class="product__title">Проект LAB</h2>
                   <p class="product__text">Маркетинг</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
 
             <li class="card-set__item">
               <a class="product" href="">
                 <div class="product__thumb">
-                  <img
-                    src="./images/portfolio/img-9.jpg"
-                    alt="Человек печатает на макбуке"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img-9/img9-370@1x.jpg 1x,
+                        ./images/portfolio/img-9/img9-370@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-9/img9-354@1x.jpg 1x,
+                        ./images/portfolio/img-9/img9-354@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/img-9/img9-450@1x.jpg 1x,
+                        ./images/portfolio/img-9/img9-450@2x.jpg 2x
+                      "
+                      type="image/jpg"
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="product__img"
+                      src="./images/portfolio/img-9/img9-450@1x.jpg"
+                      alt="Человек печатает на макбуке"
+                    />
+                  </picture>
+
                   <div class="product__overlay">
                     <div class="product__overlay-box">
                       <p class="product__overlay-text">
@@ -320,8 +606,8 @@
                 <div class="product__meta">
                   <h2 class="product__title">Growing Business</h2>
                   <p class="product__text">Приложение</p>
-                </div></a
-              >
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -405,5 +691,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

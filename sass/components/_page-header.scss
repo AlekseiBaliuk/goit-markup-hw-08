@@ -1,18 +1,11 @@
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
 .header__container {
-  position: relative;
-
   @media screen and (max-width: 767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
+    position: relative;
   }
 }
 
@@ -20,6 +13,7 @@
   @media screen and (max-width: 767px) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -27,17 +21,3 @@
     align-items: center;
   }
 }
-
-// ================================
-
-// .header {
-//   border-bottom: 1px solid #ececec;
-// }
-
-// .header__container {
-//   @extend %centeredItems;
-// }
-
-// .header__nav {
-//   @extend %centeredItems;
-// }

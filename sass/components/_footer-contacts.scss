@@ -1,6 +1,5 @@
 .footer-contacts {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: 165px;
+  @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
 
@@ -12,9 +11,6 @@
 
 .footer-contacts__list {
   font-style: normal;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
 }
 
 .footer-contacts__item:not(:last-child) {
